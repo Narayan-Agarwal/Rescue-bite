@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: whitesmoke ;
+    color: yellowgreen;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .left img {
+    max-width: 80px;
+    height: 30px;
+}
+
+.header .mid .navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header .mid .navbar li {
+    display: inline;
+}
+
+.header .mid .navbar a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .mid .navbar a.active,
+.header .mid .navbar a:hover {
+    text-decoration: underline;
+}
+
+.about {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.about h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 45px 0;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 2rem;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    
+    transition: transform 0.3s;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h2 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+img.size {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
